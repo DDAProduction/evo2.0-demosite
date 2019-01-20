@@ -5,13 +5,187 @@
     <meta name="viewport" content="width=device-width ,initial-scale=1.0, user-scalable=0" id="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bulma Site</title>
-    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
             crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
+<header>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="images/logo.png" width="112" height="150" class="header-logo">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Главная
+                    </a>
+
+                    <a class="navbar-item">
+                        О нас
+                    </a>
+                    <a class="navbar-item">
+                        Блог
+                    </a>
+                    <a class="navbar-item">
+                        Портфолио
+                    </a>
+                    <a class="navbar-item">
+                        Галерея
+                    </a>
+                    <a class="navbar-item">
+                        Каталог
+                    </a>
+                    <a class="navbar-item">
+                        Контакты
+                    </a>
+                    <a class="navbar-item">
+                        Лендинг
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="search">
+                            <form action="search" method="post">
+                                <div class="search-input">
+                                    <input type="search" class="input" placeholder="Поиск...">
+                                    <input type="submit" value="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </nav>
+</header>
+<section class="hero is-fullheight is-vcentered">
+    <div class="columns is-vcentered">
+        <div class="column is-4">
+            <figure class="image">
+                <img src="https://unsplash.it/600/800/?random&pic=1" alt="">
+            </figure>
+        </div>
+        <div class="column is-8">
+            <div class="landing-title-block column is-5-desktop is-8-tablet is-offset-2 ">
+                <h1 class="title is-1">Evolution</h1>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet at, consequuntur debitis deleniti eius error eveniet excepturi harum, incidunt magni nihil perferendis praesentium quaerat reprehenderit saepe sint tempore voluptas!</p>
+                <div class="buttons">
+                <button class="button is-rounded is-large is-outlined is-success">button</button>
+                <button class="button is-rounded is-large is-outlined is-success">button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-fullheight has-background-warning is-vcentered">
+    <div class="columns is-vcentered  has-text-centered  ">
+        <div class="column is-6">
+            <div class="landing-text-block column is-6 is-offset-2">
+            <p class="title ">AS FEATURED ON</p>
+            <figure class="image is-3by2 second-section-img">
+                <img src="https://betanews.com/wp-content/uploads/2018/06/gifs-on-cli.gif" alt="">
+            </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deserunt dolore, eius exercitationem ipsam magnam, obcaecati odio pariatur placeat quis quo reiciendis repellendus, vel voluptates voluptatum? Aspernatur delectus magni voluptate?</p>
+            </div>
+        </div>
+        <div class="column is-6  has-text-white is-vcentered bcolored">
+            <div class="landing-text-block  is-offset-1-tablet is-10-tablet column is-6-desktop  is-offset-2-desktop ">
+            <p class="title has-text-white">AS FEATURED ON</p>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, est id itaque quaerat rerum veritatis! At consequuntur dolores placeat possimus quas? Accusamus accusantium consequatur dignissimos eaque eius est magni quod.
+            </p>
+                <div class="columns has-text-left">
+                <div class="column is-2 is-offset-2"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></div>
+                <div class="column is-2 is-offset-1"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></i></div>
+                <div class="column is-2 is-offset-1"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-fullheight has-background-light is-vcentered">
+    <div class="columns is-vcentered  has-text-centered">
+        <div class="column is-6  backgrounded">
+
+        </div>
+        <div class="column is-6">
+            <div class="landing-text-block is-offset-1-tablet is-10-tablet column is-6-desktop  is-offset-2-desktop ">
+                <p class="title">AS FEATURED ON</p>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, est id itaque quaerat rerum veritatis! At consequuntur dolores placeat possimus quas? Accusamus accusantium consequatur dignissimos eaque eius est magni quod.
+                </p>
+                <div class="columns has-text-left">
+                    <div class="column is-2 is-offset-2"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></div>
+                    <div class="column is-2 is-offset-1"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></i></div>
+                    <div class="column is-2 is-offset-1"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-fullheight has-background-info is-vcentered">
+    <div class="columns is-vcentered  has-text-centered  ">
+        <div class="column is-6 ">
+        </div>
+        <div class="column is-6  has-text-white">
+            <div class="landing-text-block is-offset-1-tablet is-10-tablet column is-6-desktop  is-offset-2-desktop ">
+                <p class="title has-text-white">AS FEATURED ON</p>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, est id itaque quaerat rerum veritatis! At consequuntur dolores placeat possimus quas? Accusamus accusantium consequatur dignissimos eaque eius est magni quod.
+                </p>
+                <div class="columns has-text-left">
+                    <div class="column is-2 is-offset-2"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></div>
+                    <div class="column is-2 is-offset-1"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></i></div>
+                    <div class="column is-2 is-offset-1"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-fullheight has-background-primary is-vcentered">
+    <div class="columns is-vcentered  has-text-centered  ">
+        <div class="column is-6">
+            <div class="landing-text-block column is-6 is-offset-2">
+                <p class="title ">AS FEATURED ON</p>
+                <figure class="image is-3by2 second-section-img">
+                    <img src="https://betanews.com/wp-content/uploads/2018/06/gifs-on-cli.gif" alt="">
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deserunt dolore, eius exercitationem ipsam magnam, obcaecati odio pariatur placeat quis quo reiciendis repellendus, vel voluptates voluptatum? Aspernatur delectus magni voluptate?</p>
+            </div>
+        </div>
+        <div class="column is-6  has-text-white">
+            <div class="landing-text-block is-offset-1-tablet is-10-tablet column is-6-desktop  is-offset-2-desktop ">
+                <p class="title has-text-white">AS FEATURED ON</p>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, est id itaque quaerat rerum veritatis! At consequuntur dolores placeat possimus quas? Accusamus accusantium consequatur dignissimos eaque eius est magni quod.
+                </p>
+                <div class="columns has-text-left">
+                    <div class="column is-2 is-offset-2"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></div>
+                    <div class="column is-2 is-offset-1"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></i></div>
+                    <div class="column is-2 is-offset-1"><i class="fab fa-accessible-icon"></i><p class="has-text-centered-mobile">Ready blocks in multiple categories</p></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer has-background-black">
+    <div class="container">
+        <div class="content has-text-centered has-text-white">
+            <p class="subtitle">Powered by the <a href="#">EVO CMS</a>&copy;</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

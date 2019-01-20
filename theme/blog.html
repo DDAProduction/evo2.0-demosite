@@ -1,17 +1,297 @@
 <!doctype html>
-<html class="has-navbar-fixed-top">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width ,initial-scale=1.0, user-scalable=0" id="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bulma Site</title>
-    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
             crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
 </head>
 <body>
+
+<header сlass="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="images/logo.png" width="112" height="150" class="header-logo">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Главная
+                    </a>
+
+                    <a class="navbar-item">
+                        О нас
+                    </a>
+                    <a class="navbar-item">
+                        Блог
+                    </a>
+                    <a class="navbar-item">
+                        Портфолио
+                    </a>
+                    <a class="navbar-item">
+                        Галерея
+                    </a>
+                    <a class="navbar-item">
+                        Каталог
+                    </a>
+                    <a class="navbar-item">
+                        Контакты
+                    </a>
+                    <a class="navbar-item">
+                        Лендинг
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="search">
+                            <form action="search" method="post">
+                                <div class="search-input">
+                                    <input type="search" class="input" placeholder="Поиск...">
+                                    <input type="submit" value="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </nav>
+</header>
+<div class="container main-wrapper">
+    <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Blog</a></li>
+        </ul>
+    </nav>
+    <section class="articles">
+      <div class="columns">
+        <div class="column is-9">
+            <div class="sort-block">
+            <div id="sort-dropdown" class="dropdown sort-dropdown">
+                <div class="dropdown-trigger">
+                    <button id="drop-btn" class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>Sort</span>
+                        <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                    !!!
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">
+                            Recent
+                        </a>
+                        <a class="dropdown-item">
+                            Most rated
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Active dropdown item
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Other dropdown item
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="card article ">
+                <div class="card-content">
+                    <div class="media-center">
+                        <figure class="image is-128x128 author-image">
+                            <img src="http://www.radfaces.com/images/avatars/angela-chase.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+
+                    <div class="media-content has-text-centered">
+                        <p class="title article-title">Cras tincidunt lobortis feugiat vivamus.</p>
+                        <p class="subtitle is-6 article-subtitle has-text-grey-light">
+                            <a href="#">@angela</a> on October 7, 2017
+                        </p>
+                    </div>
+                    <div class="content article-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
+                        </p>
+                        <p>
+                            Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
+                        </p>
+                        <h3 class="has-text-centered">“Everyone should be able to do one card trick, tell two jokes, and recite three poems, in case they are ever trapped in an elevator.”</h3>
+                        <p>
+                            In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
+                            Arcu non sodales neque sodales ut etiam sit amet.
+                        </p>
+                    </div>
+                    <div class="article-media has-text-right">
+                        <a href="#" class="has-text-grey-light media-button"><i class="far fa-thumbs-up"></i>22</a>
+                        <a href="#" class="has-text-grey-light media-button"><i class="fa fa-comments"></i>88</a>
+                    </div>
+                    <button class="button is-info is-outlined view-more-btn">Read more</button>
+                </div>
+            </div>
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media-center">
+                        <figure class="image is-128x128 author-image">
+                            <img src="http://www.radfaces.com/images/avatars/angela-chase.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+
+                    <div class="media-content has-text-centered">
+                        <p class="title article-title">Cras tincidunt lobortis feugiat vivamus.</p>
+                        <p class="subtitle is-6 article-subtitle has-text-grey-light">
+                            <a href="#">@angela</a> on October 7, 2017
+                        </p>
+                    </div>
+                    <div class="content article-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
+                        </p>
+                        <p>
+                            Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
+                        </p>
+                        <h3 class="has-text-centered">“Everyone should be able to do one card trick, tell two jokes, and recite three poems, in case they are ever trapped in an elevator.”</h3>
+                        <p>
+                            In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
+                            Arcu non sodales neque sodales ut etiam sit amet.
+                        </p>
+                    </div>
+                    <div class="article-media has-text-right">
+                        <a href="#" class="has-text-grey-light media-button"><i class="far fa-thumbs-up"></i>22</a>
+                        <a href="#" class="has-text-grey-light media-button"><i class="fa fa-comments"></i>88</a>
+                    </div>
+                    <button class="button is-info is-outlined view-more-btn">Read more</button>
+                </div>
+            </div>
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media-center">
+                        <figure class="image is-128x128 author-image">
+                            <img src="http://www.radfaces.com/images/avatars/angela-chase.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+
+                    <div class="media-content has-text-centered">
+                        <p class="title article-title">Cras tincidunt lobortis feugiat vivamus.</p>
+                        <p class="subtitle is-6 article-subtitle has-text-grey-light">
+                            <a href="#">@angela</a> on October 7, 2017
+                        </p>
+                    </div>
+                    <div class="content article-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
+                        </p>
+                        <p>
+                            Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
+                        </p>
+                        <h3 class="has-text-centered">“Everyone should be able to do one card trick, tell two jokes, and recite three poems, in case they are ever trapped in an elevator.”</h3>
+                        <p>
+                            In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
+                            Arcu non sodales neque sodales ut etiam sit amet.
+                        </p>
+                    </div>
+                    <div class="article-media has-text-right">
+                        <a href="#" class="has-text-grey-light media-button"><i class="far fa-thumbs-up"></i>22</a>
+                        <a href="#" class="has-text-grey-light media-button"><i class="fa fa-comments"></i>88</a>
+                    </div>
+                    <button class="button is-info is-outlined view-more-btn">Read more</button>
+                </div>
+            </div>
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media-center">
+                        <figure class="image is-128x128 author-image">
+                            <img src="http://www.radfaces.com/images/avatars/angela-chase.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+
+                    <div class="media-content has-text-centered">
+                        <p class="title article-title">Cras tincidunt lobortis feugiat vivamus.</p>
+                        <p class="subtitle is-6 article-subtitle has-text-grey-light">
+                            <a href="#">@angela</a> on October 7, 2017
+                        </p>
+                    </div>
+                    <div class="content article-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
+                        </p>
+                        <p>
+                            Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
+                        </p>
+                        <h3 class="has-text-centered">“Everyone should be able to do one card trick, tell two jokes, and recite three poems, in case they are ever trapped in an elevator.”</h3>
+                        <p>
+                            In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
+                            Arcu non sodales neque sodales ut etiam sit amet.
+                        </p>
+                    </div>
+                    <div class="article-media has-text-right">
+                        <a href="#" class="has-text-grey-light media-button"><i class="far fa-thumbs-up"></i>22</a>
+                        <a href="#" class="has-text-grey-light media-button"><i class="fa fa-comments"></i>88</a>
+                    </div>
+                    <button class="button is-info is-outlined view-more-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="column is-3">
+            <div class="tile is-vertical">
+                <div class="tile is-parent popular-block">
+                    <article class="tile is-child box recent-container">
+                        <div class="recent-block">
+                            <p class="title">Popular:</p>
+                            <ul>
+                                <li><a href="#">Extras</a> 18.Apr.17 18:12</li>
+                                <li><a href="#">Forums</a> 18.Apr.17 18:07</li>
+                                <li><a href="#">Documentation</a> 08.Apr.17 19:18</li>
+                                <li><a href="#">Bugs&Security</a> 08.Apr.17 16:42</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-vertical ">
+                <div class="tile is-parent">
+                    <article class="tile is-child box recent-container">
+                        <div class="recent-block">
+                            <p class="title">Best of the month:</p>
+                            <ul>
+                                <li><a href="#">Extras</a> 18.Apr.17 18:12</li>
+                                <li><a href="#">Forums</a> 18.Apr.17 18:07</li>
+                                <li><a href="#">Documentation</a> 08.Apr.17 19:18</li>
+                                <li><a href="#">Bugs&Security</a> 08.Apr.17 16:42</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+   </div>
+    </section>
+</div>
+<footer class="footer has-background-black">
+    <div class="container">
+        <div class="content has-text-centered has-text-white">
+            <p class="subtitle">Powered by the <a href="#">EVO CMS</a>&copy;</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

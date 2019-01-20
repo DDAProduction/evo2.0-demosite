@@ -1,17 +1,185 @@
 <!doctype html>
-<html class="has-navbar-fixed-top">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width ,initial-scale=1.0, user-scalable=0" id="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bulma Site</title>
-    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
             crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
 </head>
 <body>
+
+<header сlass="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="images/logo.png" width="112" height="150" class="header-logo">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Главная
+                    </a>
+
+                    <a class="navbar-item">
+                        О нас
+                    </a>
+                    <a class="navbar-item">
+                        Блог
+                    </a>
+                    <a class="navbar-item">
+                        Портфолио
+                    </a>
+                    <a class="navbar-item">
+                        Галерея
+                    </a>
+                    <a class="navbar-item">
+                        Каталог
+                    </a>
+                    <a class="navbar-item">
+                        Контакты
+                    </a>
+                    <a class="navbar-item">
+                        Лендинг
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="search">
+                            <form action="search" method="post">
+                                <div class="search-input">
+                                    <input type="search" class="input" placeholder="Поиск...">
+                                    <input type="submit" value="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </nav>
+</header>
+<div class="container main-wrapper">
+    <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Catalog</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <h1 class="title">Catalog</h1>
+            <div class="box catalog-box">
+                <div class="catalog-item">
+                    <div class="media catalog-media">
+                        <div class="media-left catalog-image-container">
+                            <p class="image">
+                                <img src="http://bulma.io/images/placeholders/256x256.png">
+                            </p>
+                        </div>
+                        <div class="media-content">
+                            <p class="title">Catalog Item</p>
+                            <div class="content has-text-grey-dark">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aut culpa harum id illum iusto laborum neque, repellendus sunt voluptates voluptatibus. Accusantium adipisci asperiores atque explicabo molestias possimus ratione.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box catalog-box">
+                <div class="catalog-item">
+                    <div class="media catalog-media">
+                        <div class="media-left catalog-image-container">
+                            <p class="image">
+                                <img src="http://bulma.io/images/placeholders/256x256.png">
+                            </p>
+                        </div>
+                        <div class="media-content">
+                            <p class="title">Catalog Item</p>
+                            <div class="content has-text-grey-dark">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aut culpa harum id illum iusto laborum neque, repellendus sunt voluptates voluptatibus. Accusantium adipisci asperiores atque explicabo molestias possimus ratione.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box catalog-box">
+                <div class="catalog-item">
+                    <div class="media catalog-media">
+                        <div class="media-left catalog-image-container">
+                            <p class="image">
+                                <img src="http://bulma.io/images/placeholders/256x256.png">
+                            </p>
+                        </div>
+                        <div class="media-content">
+                            <p class="title">Catalog Item</p>
+                            <div class="content has-text-grey-dark">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aut culpa harum id illum iusto laborum neque, repellendus sunt voluptates voluptatibus. Accusantium adipisci asperiores atque explicabo molestias possimus ratione.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="box catalog-box">
+            <div class="catalog-item">
+                <div class="media catalog-media">
+                    <div class="media-left catalog-image-container">
+                        <p class="image">
+                            <img src="http://bulma.io/images/placeholders/256x256.png">
+                        </p>
+                    </div>
+                    <div class="media-content">
+                        <p class="title">Catalog Item</p>
+                        <div class="content has-text-grey-dark">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aut culpa harum id illum iusto laborum neque, repellendus sunt voluptates voluptatibus. Accusantium adipisci asperiores atque explicabo molestias possimus ratione.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="box catalog-box">
+            <div class="catalog-item">
+                <div class="media catalog-media">
+                    <div class="media-left catalog-image-container">
+                        <p class="image">
+                            <img src="http://bulma.io/images/placeholders/256x256.png">
+                        </p>
+                    </div>
+                    <div class="media-content">
+                        <p class="title">Catalog Item</p>
+                        <div class="content has-text-grey-dark">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aut culpa harum id illum iusto laborum neque, repellendus sunt voluptates voluptatibus. Accusantium adipisci asperiores atque explicabo molestias possimus ratione.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </div>
+</div>
+<footer class="footer has-background-black">
+    <div class="container">
+        <div class="content has-text-centered has-text-white">
+            <p class="subtitle">Powered by the <a href="#">EVO CMS</a>&copy;</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

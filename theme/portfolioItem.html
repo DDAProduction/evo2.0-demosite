@@ -1,17 +1,174 @@
 <!doctype html>
-<html class="has-navbar-fixed-top">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width ,initial-scale=1.0, user-scalable=0" id="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bulma Site</title>
-    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
             crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
 </head>
 <body>
+
+<header сlass="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="images/logo.png" width="112" height="150" class="header-logo">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Главная
+                    </a>
+
+                    <a class="navbar-item">
+                        О нас
+                    </a>
+                    <a class="navbar-item">
+                        Блог
+                    </a>
+                    <a class="navbar-item">
+                        Портфолио
+                    </a>
+                    <a class="navbar-item">
+                        Галерея
+                    </a>
+                    <a class="navbar-item">
+                        Каталог
+                    </a>
+                    <a class="navbar-item">
+                        Контакты
+                    </a>
+                    <a class="navbar-item">
+                        Лендинг
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="search">
+                            <form action="search" method="post">
+                                <div class="search-input">
+                                    <input type="search" class="input" placeholder="Поиск...">
+                                    <input type="submit" value="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </nav>
+</header>
+<div class="container main-wrapper">
+    <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Portfolio item</a></li>
+        </ul>
+    </nav>
+
+    <div class="box">
+        <div class="portfolio-item-title has-text-centered">
+            <h1 class="title">LANDING PAGE</h1>
+        </div>
+        <section class="hero is-info">
+            <div class="hero-body">
+
+                <div class="portfolio-item-text ">
+
+                    <div class="portfolio-item-idea">
+                        <h1 class="title">Idea</h1>
+                        <p class="subtitle">Develop a stylish Landing for a company specializing in recruiting in the field of telecommunications and information technology.</p>
+                    </div>
+                </div>
+        </section>
+        <section class="hero is-warning">
+            <div class="hero-body">
+                    <div class="portfolio-item-task">
+                        <h1 class="title">Tasks</h1>
+                        <ol class="subtitle item-tasks">
+                            <li>Create a stylish landing page for a company specializing in recruiting in the field of telecommunications and information technology</li>
+                            <li>Create a stylish landing page for a company specializing in recruiting in the field of telecommunications and information technology</li>
+                            <li>Create a stylish landing page for a company specializing in recruiting in the field of telecommunications and information technology</li>
+                        </ol>
+                    </div>
+            </div>
+        </section>
+        <section class="hero is-success">
+            <div class="hero-body">
+                <div class="portfolio-item-result has-text-centered">
+                    <h1 class="title">Result</h1>
+                    <p class="subtitle">As a result of the development, we presented a bright and original landing page, which fully meets the requirements of the customer: laconic, informative and creative. Most of the content is presented in a visual form (geography of work, report on the work done for the last year), which facilitates perception of information. Animated icons attract attention that emphasizes the main colors of the layout.
+
+                        In the middle is a catalog of vacancies, which has a block for requirements, responsibilities and photos. For the global search, two language versions - Russian and English - have been implemented, which will allow them to find work for applicants outside Ukraine.
+
+                        The window for communication allows not only to leave contact information, but also to attach a resume to accelerate employment.</p>
+                    <a class="is-link item-visit" href="#">visit this site</a>
+                </div>
+            </div>
+            <div class="hero-foot">
+                <nav class="tabs is-boxed is-centered">
+                    <div class="container">
+                        <ul>
+                            <li class="is-active">
+                                <a>Main page</a>
+                            </li>
+                            <li>
+                                <a>Catalog</a>
+                            </li>
+                            <li>
+                                <a>Abous</a>
+                            </li>
+                            <li>
+                                <a>Elements</a>
+                            </li>
+                            <li>
+                                <a>Components</a>
+                            </li>
+                            <li>
+                                <a>Layout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="tile is-ancestor page-tile">
+                <div class="tile is-parent">
+                    <article class="tile is-child ">
+                        <figure class="image is-3by2 page-image">
+                            <img src="https://bulma.io/images/placeholders/640x480.png">
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>
+
+<footer class="footer has-background-black">
+    <div class="container">
+        <div class="content has-text-centered has-text-white">
+            <p class="subtitle">Powered by the <a href="#">EVO CMS</a>&copy;</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
