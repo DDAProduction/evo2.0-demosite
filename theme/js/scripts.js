@@ -20,25 +20,29 @@ $(document).ready(function() {
             });
 
 
-
-
     //comment button
     $('.write-comment-block').hide();
 
     $('#commentBtn').click(function () {
         $('.write-comment-block').show();
-    })
+    });
+
+
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
 
 
 });
-
-
-
-
-
-//
-// $(document).click(function () {
-//     if($('#sort-dropdown').hasClass('is-active')){
-//         $('#sort-dropdown').removeClass('is-active');
-//     }
-// })
